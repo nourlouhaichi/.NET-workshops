@@ -12,11 +12,12 @@ namespace AM.ApplicationCore.Domain
         public int Capacity { get; set; }
         public DateTime ManufactureDate { get; set; }
         public int PlanneId { get; set; }
-        public PlaneType PLaneType { get; set; }
+        public PlaneType PlaneType { get; set; }
+
 
         public override string ToString()
         {
-            return "PlaneType: " + PLaneType + "ManufactureDate" + ManufactureDate + "Capacity" + Capacity;
+            return "PlaneType: " + PlaneType + "ManufactureDate" + ManufactureDate + "Capacity" + Capacity;
         }
 
         public Plane(int capacity, DateTime manufactureDate, PlaneType planeType)
