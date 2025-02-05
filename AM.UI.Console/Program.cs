@@ -2,16 +2,15 @@
 using AM.ApplicationCore.Domain;
 using AM.ApplicationCore;
 
-Console.WriteLine("Hello, World!");
 /*Plane plane = new Plane();
-plane.PLaneType = PlaneType.Airbus;
+plane.PlaneType = PlaneType.Airbus;
 plane.Capacity = 200;
 plane.ManufactureDate = DateTime.Now;
 Console.WriteLine(plane);
 
 Plane plane2 = new Plane
 {
-    PLaneType = PlaneType.Airbus,
+    PlaneType = PlaneType.Airbus,
     Capacity = 200,
     ManufactureDate = DateTime.Now
 };
