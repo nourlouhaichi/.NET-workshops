@@ -12,5 +12,11 @@ namespace AM.ApplicationCore.Domain
         public String Function { get; set; }    
         public double Salary { get; set; }
 
+        public override void PassengerType()
+        {
+            Console.WriteLine("I am Staff");
+        }
+
     }
+
 }

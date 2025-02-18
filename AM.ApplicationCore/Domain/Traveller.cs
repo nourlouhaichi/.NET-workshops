@@ -10,5 +10,10 @@ namespace AM.ApplicationCore.Domain
     {
         public String HealthInformation { get; set; }
         public String Nationnality {  get; set; }
+
+        public override void PassengerType()
+        {
+            Console.WriteLine("I am traveller");
+        }
     }
 }

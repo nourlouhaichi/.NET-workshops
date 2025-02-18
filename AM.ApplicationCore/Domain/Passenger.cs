@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,5 +21,19 @@ namespace AM.ApplicationCore.Domain
         {
             return "PassportNumber: " + PassportNumber + "FirstName" + FirstName + "LastName" + LastName;
         }
+
+        public bool CheckProfile(string name, string lastname)
+        {
+            return name == FirstName && lastname == LastName;
+        }
+        public bool CheckProfile(string name, string lastname, string email)
+        {
+            return name == FirstName && lastname == LastName && email == EmailAdress;
+        }
+        public virtual void PassengerType()
+        {
+            Console.WriteLine("I am Passenger");
+        }
+
     }
 }

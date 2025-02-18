@@ -12,3 +12,8 @@ C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\ref
 C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\AM.UI.Console.pdb
 C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\AM.UI.Console.genruntimeconfig.cache
 C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\ref\AM.UI.Console.dll
+C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\bin\Debug\net8.0\AM.ApplicationCore.dll
+C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\bin\Debug\net8.0\AM.ApplicationCore.pdb
+C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\AM.UI.Console.csproj.AssemblyReference.cache
+C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\AM.UI.Console.sourcelink.json
+C:\Users\nourl\source\repos\AirportManagement\AM.UI.Console\obj\Debug\net8.0\AM.UI.Co.4983CB9F.Up2Date

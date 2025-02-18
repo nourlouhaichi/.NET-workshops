@@ -16,5 +16,10 @@ namespace AM.ApplicationCore.Domain
         public int FlightId { get; set; }
         public DateTime EffectiveArrival {  get; set; }
         public int EstimationDuration { get; set; }
+
+        public override string ToString()
+        {
+            return "Flight ID: " + FlightId + "Destination: " + Destination +  "Departure: " + Departure + "Flight Date: " + FlightDate + "Estimated Duration: " + EstimationDuration;
+        }
     }
 }

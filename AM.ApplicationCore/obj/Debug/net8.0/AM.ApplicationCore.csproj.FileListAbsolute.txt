@@ -9,3 +9,4 @@ C:\Users\nourl\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net8.
 C:\Users\nourl\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net8.0\refint\AM.ApplicationCore.dll
 C:\Users\nourl\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net8.0\AM.ApplicationCore.pdb
 C:\Users\nourl\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net8.0\ref\AM.ApplicationCore.dll
+C:\Users\nourl\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net8.0\AM.ApplicationCore.sourcelink.json

@@ -20,12 +20,12 @@ namespace AM.ApplicationCore.Domain
             return "PlaneType: " + PlaneType + "ManufactureDate" + ManufactureDate + "Capacity" + Capacity;
         }
 
-        public Plane(int capacity, DateTime manufactureDate, PlaneType planeType)
+       /* public Plane(int capacity, DateTime manufactureDate, PlaneType planeType)
         {
             Capacity = capacity;
             ManufactureDate = manufactureDate;
             PlaneType = planeType;
-        }
+        }*/
     }
     public enum PlaneType
     {
