@@ -26,12 +26,14 @@ namespace AM.ApplicationCore
         // Affect all passengers to flight1
         public static Flight flight1 = new Flight
         {
+            Passengers = new List<Passenger> { traveller1, traveller2, traveller3, traveller4, traveller5 },
             FlightDate = new DateTime(2022, 01, 01, 15, 10, 10),
             Destination = "Paris",
             EffectiveArrival = new DateTime(2022, 01, 01, 17, 10, 10),
             EstimationDuration = 110
        ,
             Plane = Airbusplane
+
         };
         public static Flight flight2 = new Flight { FlightDate = new DateTime(2022, 02, 01, 21, 10, 10), Destination = "Paris", EffectiveArrival = new DateTime(2022, 02, 01, 23, 10, 10), EstimationDuration = 105, Plane = BoingPlane };
         public static Flight flight3 = new Flight { FlightDate = new DateTime(2022, 03, 01, 5, 10, 10), Destination = "Paris", EffectiveArrival = new DateTime(2022, 03, 01, 6, 40, 10), EstimationDuration = 100, Plane = BoingPlane };

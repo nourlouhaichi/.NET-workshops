@@ -58,5 +58,21 @@ serviceFlight.flights = TestData.listFlights;
 
 serviceFlight.GetFlights("Destination", "Madrid");
 
+serviceFlight.ShowFlightDetails(TestData.Airbusplane);
 
+DateTime startDate = DateTime.Now;
+Console.WriteLine(serviceFlight.ProgrammedFlightNumber(startDate));
 
+Console.WriteLine(serviceFlight.DurationAverage("Madrid"));
+
+foreach (var flight in serviceFlight.OrderedDurationFlights())
+{
+    Console.WriteLine(flight.FlightId + " / " + flight.Destination + " / " + flight.EstimationDuration + " / ");
+}
+
+foreach (var traveller in serviceFlight.SeniorTravellers(TestData.listFlights[0]))
+{
+    Console.WriteLine(traveller.FirstName + " / " + traveller.LastName + " / " + traveller.BirthDate.ToShortDateString());
+}
+
+serviceFlight.DestinationGroupedFlights();

@@ -14,15 +14,15 @@ namespace AM.ApplicationCore.Services
 
         public List<DateTime> GetFlightDates(string destination)
         {
-            List<DateTime> dates = new List<DateTime>();
+            //List<DateTime> dates = new List<DateTime>();
             // boucle foreach
-            foreach (var flight in flights)
+            /*foreach (var flight in flights)
             {
                 if (flight.Destination == destination)
                 {
                     dates.Add(flight.FlightDate);
                 }
-            }
+            }*/
             //// boucle for 
             //for (int i = 0; i < flights.Count; i++)
             //{
@@ -31,7 +31,14 @@ namespace AM.ApplicationCore.Services
             //        dates.Add(flights[i].FlightDate);
             //    }
             //}
-            return dates;
+            //return dates;
+            var query1 = from f in flights
+                          where f.Destination == destination
+                          select f.FlightDate;
+
+            var query2 = flights.Where(f => f.Destination == destination)
+                         .Select(f => f.FlightDate);
+            return query2.ToList();
         }
 
         public void GetFlights(string filterType, string filterValue)
@@ -71,6 +78,71 @@ namespace AM.ApplicationCore.Services
                     Console.WriteLine("Invalid filter type");
                     break;
             }
+        }
+
+        public void ShowFlightDetails(Plane plane)
+        {
+            var query1 = from f in flights
+                         where f.Plane == plane
+                         select new { f.Destination, f.FlightDate };
+
+            var query2 = flights.Where(f => f.Plane == plane).Select(f => new { f.Destination, f.FlightDate });
+            foreach (var f in query1)
+            { Console.WriteLine("Destination=" + f.Destination + " Date=" + f.FlightDate); }
+
+        }
+
+        public int ProgrammedFlightNumber(DateTime startDate)
+        {
+            var query = from flight in flights
+                        where flight.FlightDate >= startDate && flight.FlightDate <= startDate.AddDays(7)
+                        select flight;
+            return query.Count();
+        }
+
+        public double DurationAverage(string destination)
+        {
+            var query1 = (from f in flights
+                          where f.Destination == destination
+                          select f.EstimationDuration).Average();
+
+            var query2 = flights.Where(f => f.Destination == destination).Select(f => f.EstimationDuration).Average();
+            return query1;
+        }
+
+        public IEnumerable<Flight> OrderedDurationFlights()
+        {
+            var query = flights.OrderByDescending(f => f.EstimationDuration);
+            return query;
+        }
+
+        public List<Traveller> SeniorTravellers(Flight flight)
+        {
+            var query1 = flight.Passengers.OfType<Traveller>()
+                     .OrderBy(p => p.BirthDate)
+                     .Take(3)
+                     .ToList();
+
+            var query2 = (from f in flight.Passengers.OfType<Traveller>()
+                          orderby f.BirthDate
+                          select f).Take(3);
+            return query1;
+        }
+
+        public IEnumerable<IGrouping<string, Flight>> DestinationGroupedFlights()
+        {
+            var query1 = flights.GroupBy(f => f.Destination);
+
+            foreach (var item in query1)
+            {
+                Console.WriteLine("\n Destination : " + item.Key);
+                foreach (var flight in item)
+                {
+                    Console.WriteLine(flight.FlightId +  " Départ: " + flight.Departure + " Date: " + flight.FlightDate);
+                }
+            }
+            return query1;
+
         }
     }
 }
