@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4398FB20-CC51-42B0-A0DD-494348CF32EB}|AM.UI.Console\\AM.UI.Console.csproj|c:\\users\\nourl\\source\\repos\\airportmanagement\\am.ui.console\\am.ui.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4398FB20-CC51-42B0-A0DD-494348CF32EB}|AM.UI.Console\\AM.UI.Console.csproj|solutionrelative:am.ui.console\\am.ui.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F84C467-DE26-4E00-ABC2-C06E61F3B820}|AM.ApplicationCore\\AM.ApplicationCore.csproj|c:\\users\\nourl\\source\\repos\\airportmanagement\\am.applicationcore\\am.applicationcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5F84C467-DE26-4E00-ABC2-C06E61F3B820}|AM.ApplicationCore\\AM.ApplicationCore.csproj|solutionrelative:am.applicationcore\\am.applicationcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A091144-416B-4732-BC46-3325116F7A61}|AM.Infrastructure\\AM.Infrastructure.csproj|c:\\users\\nourl\\source\\repos\\airportmanagement\\am.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A091144-416B-4732-BC46-3325116F7A61}|AM.Infrastructure\\AM.Infrastructure.csproj|solutionrelative:am.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AM.UI.Console",
+              "DocumentMoniker": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj",
+              "RelativeDocumentMoniker": "AM.UI.Console\\AM.UI.Console.csproj",
+              "ToolTip": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj",
+              "RelativeToolTip": "AM.UI.Console\\AM.UI.Console.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-25T12:55:27.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AM.ApplicationCore",
+              "DocumentMoniker": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+              "RelativeDocumentMoniker": "AM.ApplicationCore\\AM.ApplicationCore.csproj",
+              "ToolTip": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+              "RelativeToolTip": "AM.ApplicationCore\\AM.ApplicationCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-25T12:46:19.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "AM.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\nourl\\source\\repos\\AirportManagement\\AM.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "AM.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:45:45.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
